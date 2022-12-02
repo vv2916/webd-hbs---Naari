@@ -28,6 +28,6 @@ let add = (name, email, message) => {
 
     usr.save()
 }
-//add('rishita', 'root2')
+
 
 module.exports = user
