@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Naari</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Naari</title>
+    <link rel="stylesheet" href="css/Naari.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style media="screen">
+      
+ *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ } 
+
+body{
+    background-color: #FFEEE7;
+}
+
+form{
+    height: 520px;
+    width: 400px;
+    background-color: #fcfbfb;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);  
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    /* color: #864141; */
+    color: #A11E1E;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.h1{
+    font-size: 300px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+} 
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #FFEEE7;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #A11E1E;
+    color: white;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ </style>
+</head>
+<body>
+   {{>nav}}
+    
+    <form id="form_id" action="/login" method="post">
+       <h1> Login</h1>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter your username" id="username" name="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password">
+
+        <input type="submit" value="Log In" class="button" id="submit">
+       
+    </form>
+
+    <script>
+        var attempt = 3; // Count no. of attempts left.
+        function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if ( username == "Shreya" && password == "shreya123"){
+            window.location = "Naari.html   "; // Redirect to home page.
+            return false;
+        }
+        
+        else{
+            attempt --; // -1 attempt
+            alert("You have " + attempt + " attempt(s) left!");
+            if( attempt == 0){
+                document.getElementById("username").disabled = true;
+                document.getElementById("password").disabled = true;
+                document.getElementById("submit").disabled = true;
+                return false;
+            }
+        }
+    }
+    
+    </script>
+  
+</body>
+</html>

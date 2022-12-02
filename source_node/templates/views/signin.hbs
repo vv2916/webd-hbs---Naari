@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Naari</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Naari</title>
+    <link rel="stylesheet" href="css/Naari.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style media="screen">
+      
+ *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ } 
+
+body{
+    background-color: #FFEEE7;
+    overflow-y: auto;
+}
+
+form{
+    height: 700px;
+    width: 400px;
+    background-color: #fcfbfb;
+    position: absolute;
+    margin: 70px 0 22px 0;
+    /* display: inline-block; */
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    padding: 20px 35px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);  
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    /* color: #864141; */
+    color: #A11E1E;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.h1{
+    font-size: 300px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+} 
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #FFEEE7;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #A11E1E;
+    color: white;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ </style>
+</head>
+<body>
+    {{>nav}}
+    <form id="form_id">
+       <h1> Sign Up</h1>
+
+       <label for="firstname">First Name</label>
+       <input type="text" placeholder="Enter you first name" id="fname" name="fname">
+
+       <label for="surname">Surname</label>
+       <input type="text" placeholder="Enter you surname" id="sname" name="sname">
+
+        <label for="username">Email</label>
+        <input type="text" placeholder="Enter your email id" id="email" name="emailid">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password">
+
+        <input type="button" value="Sign up" class="button" id="submit" onclick="validate()">
+       
+    </form>
+  
+</body>
+</html>

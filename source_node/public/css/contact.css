@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+  
+  }
+  
+  body {
+    background-color: #bb856e;
+    /* overflow: hidden; */
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+    /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #FFEEE7;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 40px 0px;
+    text-decoration: none;
+    font-family:'Baloo Tammudu 2' ;
+    font-size: 20px;
+    float: right;
+    /* position: fixed; */
+    /* top: 0px; */
+    /* width: 100%; */
+  } 
+  
+  /* Change the color of links on hover */
+  /* .topnav a:hover {
+    background-color: rgb(148, 48, 48);
+    color: white;
+  } */
+  
+  /*Styling the logo*/
+  .brand-logo {
+    /* padding-left: 25px; */
+    padding: top 9px;
+    padding-right: 100px;
+  }
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+   
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+.container{
+  margin-top: 10%;
+  margin-left: 23%;
+  width: 55%;
+  background: #fcfbfb;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(214, 10, 10, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #A11E1E;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #FFEEE7;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box {
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #A11E1E;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #a05151;
+}
