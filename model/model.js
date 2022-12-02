@@ -24,6 +24,6 @@ let add = (nm, pass) => {
 
     usr.save()
 }
-//add('rishita', 'root2')
+
 
 module.exports = user
